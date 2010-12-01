@@ -1,0 +1,10 @@
+- if @posts.empty? 
+	%p There are no posts at this time.
+- else
+	- @posts.each do |post|
+		#article
+			%h4
+				= post.title
+				%span.created_at
+					= post.created_at.strftime("%m-%d-%Y")
+			.content= RedCloth.new(post.body).to_html

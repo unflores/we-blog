@@ -1,0 +1,122 @@
+*{  margin: 0; padding: 0; font-size: 14px; color: black; 
+ font-family: Arial, Helvetica, sans-serif;}
+html{ height: 100%; background: #b7adbd;}
+body{ height: 100%;}
+h1 { font-size: 60px; font-family: 'IM Fell English', Arial, Helvetica, sans-serif;}
+h2 { font-size: 175%; text-align: center; font-family: Bitstream Vera Serif, Verdana, Arial, Helvetica, sans-serif;}
+h3 { font-size: 125%; padding-bottom: .5em;}
+h4 { font-size: 110%;}
+h5 { font-size: 100%; margin-left: 20px;}
+p  { font-size: .8em; padding-top: .8em;}
+ul { list-style: none;}
+
+img{border: none;}
+hr { border: solid 1px #454148;}
+
+.m2x{padding-left: 10px;}
+.m3x{padding-left: 18px;}
+.m4x{padding-left: 28px;}
+.hidden{ display: none;}
+.c{ text-align:center;}
+a:link {  color: #967ea5; text-decoration: underline;}
+a:hover{  color: #967ea5; text-decoration: none;  }
+.error{ color: red; display: block;}
+.errorExplanation{padding: 5px; background: none repeat scroll 0% 0% rgb(255, 191, 198); border: 3px solid rgb(111, 41, 49); -moz-border-radius: 8px 8px 8px 8px;}
+.errorExplanation h3{text-align:center;}
+.errorExplanation ul{list-style:inside circle; margin-left:30px;}
+/********** generic_form *************/  
+form{  padding: 0px; margin: 0;}
+form fieldset{  border: solid 1px #b7adbd; padding: 5px; }
+form input{ margin: 0; border: 1px solid #CCF;}
+form select{ margin: 0 5px 0 5px; border: 1px solid #CCF; width: 100px; }
+form input:focus, form select:focus, option:focus{ border: 1px solid #487305; outline:none; }
+form input.radio:focus{ outline: none; border: none; }
+form legend{ color: #000; font-size: 110%; font-weight: bold; }
+form label{ padding: 0; }
+form textarea{ width: 100%; height: 20em; border: 1px solid #CCF;  padding: 0; margin: 0; }
+form textarea:focus{ border: 1px solid #487305; }
+form button{ margin: 10px 0 0 0;  background-color: #FFF;  color: black;  border: 3px double #4B5320; }
+form ul{ padding: 0; margin: 0; }
+form ul li{ list-style-type: none;   margin: 1em 0 0 0;  }
+form #subject { width: 250px; }
+form #post_submit{margin-top: 10px; width: 200px; height: 50px; font-size: 30px;cursor:pointer;}
+.no_send{display: none;}
+#textile_defs{background:#D3D1DF; -moz-border-radius:5px; padding:5px;margin-top:5px;border: 1px solid #B5B3BF;}
+#textile_defs h4{text-align:center;}
+#textile_defs ul{text-align:center;}
+#textile_defs ul li{line-height:10px;font-size:10px;display: inline;font-style:italic;border-right:solid #4F4F4F 1px;padding:0 5px;color:#4F4F4F;}
+#textile_defs ul li:last-child{border:none;}
+
+/*********** generic table ************/
+table {	background-color: transparent; text-align: left; border-spacing: 0px; 
+        padding: 0 0 20px 0; border: 1px solid #baaea3;width:100%;}
+table td{ padding: 5px; height: 30px; background-color: transparent; color: #816658; 
+         }
+table tr.hidden_atts{ display:none;}
+table th{ color: black; padding: 5px;}
+
+/***********************
+ header
+***********************/
+#header{background: url("/images/head_bkg.png") 0 4px repeat-x white;  height: 119px;  }
+#header h1{ height: 55px; margin-left: 100px; padding-left: 150px; padding-top:64px; background: url(/images/spriteme1.png) -10px -166px; width:490px;}
+#header #description {position:absolute; top:92px;left:697px;}
+/**********************
+ content
+**********************/
+#wrapper{ float:left; width:621px}
+h2#content_head{ margin-top: 10px; text-align: center; overflow: visible;}
+#content_head {}
+.created_at{font-size:10px;font-style:italic;font-weight:normal;display:block}
+article .content{padding:5px;}
+#content_head{ width: 621px; height: 21px;  background: url(/images/spriteme1.png) -10px -10px;font-family:'IM Fell English';}
+#content_body{ padding: 10px 20px 0 15px; min-height: 300px;background: url(/images/spriteme2.png) repeat-y -205px 0px;}
+#content_foot{ background: url(/images/spriteme1.png) -10px -51px; width: 621px; height: 28px;}
+#content_body p{ margin: 0 20px;}
+table{margin:0;}
+/**********************
+ footer
+**********************/
+#foot_wrapper{ float: left; background: no-repeat url(); height: 137px;}
+#foot_body{margin-left: 95px; padding-right:25px; height: 58px; width: 462px; background: url(/images/spriteme1.png) no-repeat -10px -94px; clear:both;}
+#foot_body p{ text-align: center;}
+ /********************
+  nav
+ *********************/ 
+#nav   { float: left; width: 175px; padding-top:25px; margin: 10px 2em 0 2em;  background: url(/images/spriteme3.png)  no-repeat -10px -10px;}
+#nav ul li{background: url(/images/spriteme2.png) -10px 0px; padding: 0; margin: 0; width: 100%;  line-height: 2em; }
+#nav .footer{background: url(/images/spriteme3.png) no-repeat scroll -205px -10px;height:30px;}
+#nav ul li a:link, #nav li a:visited{ margin: 0 0; display: block; text-align: center; font-family: Verdana, Arial, Helvetica, sans-serif; width: 100%; min-height:15px; font-size: 1em; font-weight:bold; text-decoration: none; color: black;}
+#nav ul li a:hover, a:active{ width: 100%; text-decoration: underline;}
+#nav h4{text-align:center;color:#AF6F00; font-size:18px;}
+#nav ul li ul li{font-size:11px;}
+#active{ text-decoration: underline; }
+/*************************
+ Resume
+**************************/
+table#contact_info{ width: 580px; border: none;}
+table#contact_info td{ width: 32%; text-align: center;}
+table#resume_data th{ vertical-align: top;}
+.resume li ul{ list-style: square;}
+.resume li ul li{ padding-bottom: .5em;}
+.resume li h3{ margin: 1em 0 0 0; font-size: 1em;}
+.job { font-weight: bold;}
+/**************************
+ portfolio
+**************************/
+#work_container{ min-height: 325px;padding-top: 10px;}
+#work_frame{ width: 400px; min-height: 325px; margin: 0 auto; }
+#work_frame p,#work_frame ul{ padding-left: 50px; margin-left:0;}
+#work_frame img {}
+.portfolio_list{ text-align: center;}
+.portfolio_list li{ display: inline; }
+/**************************
+	Twitter widget
+**************************/
+#twitter{float: left; width: 300px; margin: 18px 20px;}
+#twitter p{border-bottom: solid 1px black;margin-left:3px;}
+#twitter h2 {text-align:left;border-bottom:2px solid black;}
+
+pre {display: block; margin: 2em 0; white-space: pre; overflow: auto; line-height: 1.4; border: 3px solid #ccc; background: #ece9d8; padding: 8px; -moz-border-radius:10px; -webkit-border-radius: 10px;}
+#foot_wrapper {background-image: url(/images/spriteme1.png); background-position: -10px -305px;}
+

@@ -1,0 +1,42 @@
+!!! 5
+%html
+  %head
+    %meta{:name=>"author", :content=>"Austin Flores"}
+    %meta{:name=>"keywords", :content=>"Ctrl4ltdeleteme, portfolio, Austin Flores"}
+    %meta{:'http-equiv'=>"Content-Type", :content=>"text/html; charset=utf-8"}
+    %title Ctrl4ltdeleteme - Main
+    = stylesheet_link_tag :all
+    = javascript_include_tag :defaults
+    = csrf_meta_tag
+    %link{ :href => 'http://fonts.googleapis.com/css?family=IM+Fell+English', :rel => 'stylesheet', :type=>'text/css'}
+  %body
+    #header
+      %h1 ctrl 4lt delete me
+      %p#description
+        The super badassed blog by
+        %span.author 
+          %a{:href=>"http://www.cloudspace.com/team#austinflores", :target=>'_blank'} Austin Flores
+    %hr
+    %div#nav
+      %ul
+        %li 
+          %a{:href => "/"} I got Nothin
+          /- unless navigation_items.nil?
+          /  = render :partial => 'layouts/dynamic_nav', :locals => { :items => navigation_items}
+          /- if admin? session
+          /  = render :partial => 'layouts/admin_nav'
+      .footer &nbsp;    
+    %p= flash[:message]
+
+    #wrapper
+      %h2#content_head The Blag
+      #content_body
+        = yield
+      #content_foot  &nbsp;
+
+      #foot_wrapper
+        #foot_body
+          %p#footer
+            != "Brought to you with the help of #{link_to "Rails", "http://rubyonrails.org/"} and #{link_to "Heroku", "http://heroku.com"} goodness."
+    #twitter
+      /= render :partial => 'layouts/tweet_stream', :locals => { :tweets => tweets}
