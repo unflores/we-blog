@@ -1,0 +1,24 @@
+- form_for(@post) do |f|
+
+	%table
+		%tr
+			%th= f.label :title
+			%td= f.text_field :title
+		%tr
+			%td{:colspan=>'2'}= f.text_area :body
+		%tr
+			%th= f.label 'in blog?'
+			%td= f.check_box :published
+		%tr
+			%th= f.label 'in nav?'
+			%td= f.check_box :in_navigation
+	= f.submit 'Update'
+	#textile_defs
+		%h4 textile usage
+		%ul
+			%li
+				\*ul
+			%li
+				\#ol
+			%li
+				wrap code in pre then code tags

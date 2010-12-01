@@ -1,0 +1,13 @@
+%h3 New post
+-if @post.errors.any?
+  #errors
+    %p= "#{pluralize(@post.errors.count, "error")}  prohibited this user from being saved:"
+    %ul  
+      -@post.errors.full_messages.each do |msg|
+        %li= msg
+= render :partial => 'post'
+
+%p
+  = submit_tag 'Create'
+  |
+  = link_to 'Back', posts_path 
