@@ -17,12 +17,21 @@ class PostsController < ApplicationController
   end
 
   def create
+    @post = Post.new(params['post'])
+    if @post.save()
+      redirect_to posts_path
+    else
+      redirect_to new_post_path
+    end
   end
 
   def update
   end
 
   def destroy
+    @post = Post.find(params['id'])
+    @post.delete()
+    redirect_to posts_path
   end
 
 end

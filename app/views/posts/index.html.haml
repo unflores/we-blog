@@ -1,13 +1,15 @@
 %h3 Listing posts
-
-%table
-	%tr
-		%th{:scope=>'col'} Title
-		%th{:scope=>'col', :colspan=>'2'} Options
-		%th{:scope=>'col'} In Blog?
-	- @posts.each do |post|
+-if @posts.any?
+	%table
 		%tr
-			%td= link_to h post.title
-			%td= link_to 'Edit', edit_post_path(post)
-			%td= link_to 'Destroy', post, :confirm => 'Are you sure?', :method => :delete
-			%td= post.published ? 'yes' : 'no'
+			%th{:scope=>'col'} Title
+			%th{:scope=>'col', :colspan=>'2'} Options
+			%th{:scope=>'col'} In Blog?
+		- @posts.each do |post|
+			%tr
+				%td= link_to h post.title
+				%td= link_to 'Edit', edit_post_path(post)
+				%td= link_to 'Destroy', post, :confirm => 'Are you sure?', :method => :delete
+				%td= post.published ? 'yes' : 'no'
+-else
+	%p There are currently no posts. Why not #{link_to "create", new_post_path} one?
