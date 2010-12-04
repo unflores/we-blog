@@ -11,11 +11,11 @@ class ApplicationController < ActionController::Base
   def admin_required
     unless admin?(session)
       flash[:error] = "You must be logged in to access this page."
-      redirect_to '/sessions/new'
+      redirect_to new_session_path
     end
   end
 
   def admin?(session)
-    session[:password] == "hai!!!1111lo"  
+    session[:password] == ENV['ADMIN_PASS']
   end
 end
