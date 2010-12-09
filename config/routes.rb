@@ -6,4 +6,11 @@ Weblog::Application.routes.draw do
     end
   end
   resources :sessions
+  
+  match ':page_name',
+   :constraints => {:page_name => /about|resume/},
+   :to => "static#show"
+
+  
+  
 end

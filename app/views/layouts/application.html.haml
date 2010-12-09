@@ -19,17 +19,18 @@
     %hr
     %div#nav
       %ul
-        %li 
-          %a{:href => "/"} I got Nothin
-          /- unless navigation_items.nil?
-          /  = render :partial => 'layouts/dynamic_nav', :locals => { :items => navigation_items}
-          /- if admin? session
-          /  = render :partial => 'layouts/admin_nav'
+        %li
+          -if navigation_items.any?
+            = render :partial => 'layouts/dynamic_nav', :locals => { :items => navigation_items}
+          -else
+            %a{:href => "/"} I got Nothin
+          - if admin? session
+            = render :partial => 'layouts/admin_nav'
       .footer &nbsp;    
     %p= flash[:message]
 
     #wrapper
-      %h2#content_head The Blag
+      %h2#content_head= if yield(:content_title).blank? then 'The Blag' else yield :content_title end
       #content_body
         = yield
       #content_foot  &nbsp;

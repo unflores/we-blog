@@ -67,11 +67,11 @@ table th{ color: black; padding: 5px;}
 #wrapper{ float:left; width:621px}
 h2#content_head{ margin-top: 10px; text-align: center; overflow: visible;}
 #content_head {}
-.created_at{font-size:10px;font-style:italic;font-weight:normal;display:block}
+.created_at{font-size:10px;font-style:italic;font-weight:normal;display:block;}
 article .content{padding:5px;}
-#content_head{ width: 621px; height: 21px;  background: url(/images/spriteme1.png) -10px -10px;font-family:'IM Fell English';}
-#content_body{ padding: 10px 20px 0 15px; min-height: 300px;background: url(/images/spriteme2.png) repeat-y -205px 0px;}
-#content_foot{ background: url(/images/spriteme1.png) -10px -51px; width: 621px; height: 28px;}
+#content_head{ width: 621px; height: 21px;  background: url("/images/spriteme1.png") -10px -10px;font-family:'IM Fell English';}
+#content_body{ padding: 10px 20px 10px 15px; min-height: 300px; background: url("/images/spriteme2.png") repeat-y -205px 0px;}
+#content_foot{ background: url("/images/spriteme1.png") -10px -51px; width: 621px; height: 28px;}
 #content_body p{ margin: 0 20px;}
 table{margin:0;}
 /**********************
@@ -94,13 +94,21 @@ table{margin:0;}
 /*************************
  Resume
 **************************/
+#resume h1,#resume h2,#resume h3,#resume h4,#resume h5{margin:0;}
+#resume .title{float:left; width:200px;}
 table#contact_info{ width: 580px; border: none;}
 table#contact_info td{ width: 32%; text-align: center;}
-table#resume_data th{ vertical-align: top;}
-.resume li ul{ list-style: square;}
-.resume li ul li{ padding-bottom: .5em;}
-.resume li h3{ margin: 1em 0 0 0; font-size: 1em;}
-.job { font-weight: bold;}
+#resume_data {border:none;}
+#resume_data th{ vertical-align: top;width:200px;}
+#resume_data th,table#resume_data td{padding:10px 0;}
+#resume_data .responsibilities ul{list-style: circle;}
+#resume_data .responsibilities li{margin-bottom:5px;}
+#resume h3{text-align:center;}
+#resume li ul{ list-style: square;}
+#resume li ul li{ padding-bottom: .5em;}
+#resume li h3{ margin: 1em 0 0 0; font-size: 1em;}
+#resume .company{}
+
 /**************************
  portfolio
 **************************/

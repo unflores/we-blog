@@ -6,5 +6,6 @@
 			%h4
 				= post.title
 				%span.created_at
-					= post.created_at.strftime("%m-%d-%Y")
-			.content= RedCloth.new(post.body).to_html
+					= post.created_at.strftime("%m-%d-%Y") if post.created_at
+			.content
+				!= RedCloth.new(post.body).to_html
