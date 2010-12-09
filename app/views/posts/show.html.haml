@@ -1,0 +1,11 @@
+%h3 
+	= h @post.title
+
+%div
+	!= RedCloth.new(@post.body).to_html
+
+-if admin? session
+	%div 
+		= link_to 'Edit this post', edit_post_path(@post)
+		|
+		= link_to 'Show Posts', posts_path

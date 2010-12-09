@@ -1,0 +1,42 @@
+-content_for :content_title, 'Austin Flores'
+#resume
+  %table{:id=>"contact_info"}
+    %tbody
+      %tr{:style=>"display:none;"}
+        %th{:scope=>"col"} email
+        %th{:scope=>"col"} address
+        %th{:scope=>"col"} phone
+      %tr
+        %td{:style=>"text-align:left;"}= link_to 'ctrl4ltdeleteme@gmail.com', '/contact'
+        %td 4801 Gorham Avenue<br/>Orlando, FL 32817
+        %td{:style=>"text-align:right;"} 772-215-5705
+        
+  %h3 Experience
+  %table#resume_data
+    %tbody
+      %tr
+        %th.company{:scope=>'row'}
+          %h4=link_to 'Cloudspace', 'http://cloudspace.com'
+          %h5 Lead Engineer
+        %td.responsibilities
+          %ul
+            %li Consulting the client on the implementation of new features.  
+            %li Administering and rapidly deploying projects. 
+            %li Researching and implementing new features.
+      %tr
+        %th.company{:scope=>'row'}
+          %h4=link_to "Florezdesign", 'http://florezdesign.com'
+          %h5 Web Developer
+        %td.responsibilities
+          %ul
+            %li Implement Content Management Systems.
+            %li Develop database driven websites
+      %tr
+        %th.company{:scope=>'row'}
+          %h4{:title=>'Course Development and Webservices'}=link_to 'CDWS', "http://cdws.ucf.edu/"
+          %h5 Web Developer
+        %td.responsibilities
+          %ul
+            %li Implemented Content Management Systems.
+            %li Held training sessions to train faculty.
+            %li Developed XHTML/CSS websites in accordance with W3C standards and Section 508 compliance.
