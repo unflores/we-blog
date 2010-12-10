@@ -3,6 +3,7 @@
 html{ height: 100%; background: #b7adbd;}
 body{ height: 100%;}
 h1 { font-size: 60px; font-family: 'IM Fell English', Arial, Helvetica, sans-serif;}
+h1 a,h1 a:hover{color:black;text-decoration: none; font-size: 60px; font-family: 'IM Fell English', Arial, Helvetica, sans-serif;}
 h2 { font-size: 175%; text-align: center; font-family: Bitstream Vera Serif, Verdana, Arial, Helvetica, sans-serif;}
 h3 { font-size: 125%; padding-bottom: .5em;}
 h4 { font-size: 110%;}
@@ -96,13 +97,13 @@ table{margin:0;}
 **************************/
 #resume h1,#resume h2,#resume h3,#resume h4,#resume h5{margin:0;}
 #resume .title{float:left; width:200px;}
-table#contact_info{ width: 580px; border: none;}
-table#contact_info td{ width: 32%; text-align: center;}
+table#contact_info{ width: 580px; border: none;border-top:1px solid;}
+table#contact_info td{ width: 32%; text-align: center;vertical-align:top;}
+#resume_data .dates{font-size: 10px; font-weight: normal;}
 #resume_data {border:none;}
 #resume_data th{ vertical-align: top;width:200px;}
 #resume_data th,table#resume_data td{padding:10px 0;}
-#resume_data .responsibilities ul{list-style: circle;}
-#resume_data .responsibilities li{margin-bottom:5px;}
+#resume_data .merits ul,#resume_data .responsibilities ul{list-style: circle;margin-bottom:5px;}
 #resume h3{text-align:center;}
 #resume li ul{ list-style: square;}
 #resume li ul li{ padding-bottom: .5em;}
