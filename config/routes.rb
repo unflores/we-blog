@@ -7,10 +7,6 @@ Weblog::Application.routes.draw do
   end
   resources :sessions
   
-  match ':page_name',
-   :constraints => {:page_name => /about|resume/},
-   :to => "static#show"
-
-  
+  match ':page_name', :to => "static#show"
   
 end

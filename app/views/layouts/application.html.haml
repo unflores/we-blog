@@ -19,13 +19,13 @@
     %hr
     %div#nav
       %ul
-        %li
-          -if navigation_items.any?
-            = render :partial => 'layouts/dynamic_nav', :locals => { :items => navigation_items}
-          -else
-            %a{:href => "/"} I got Nothin
-          - if admin? session
-            = render :partial => 'layouts/admin_nav'
+        %li=link_to "Home", '/'
+        -if navigation_items.any?
+          = render :partial => 'layouts/dynamic_nav', :locals => { :items => navigation_items}
+        -else
+          %a{:href => "/"} I got Nothin
+        - if admin? session
+          = render :partial => 'layouts/admin_nav'
       .footer &nbsp;    
     %p= flash[:message]
 
