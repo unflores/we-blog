@@ -4,3 +4,4 @@ log/*.log
 tmp/**/*
 .DS_Store
 */.DS_Store
+db/schema.rb
