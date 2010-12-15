@@ -29,6 +29,7 @@ GEM
       activemodel (= 3.0.3)
       activesupport (= 3.0.3)
     activesupport (3.0.3)
+    acts-as-taggable-on (2.0.6)
     arel (2.0.4)
     builder (2.1.2)
     erubis (2.6.6)
@@ -72,6 +73,7 @@ PLATFORMS
 
 DEPENDENCIES
   RedCloth (= 4.2.3)
+  acts-as-taggable-on
   haml (= 3.0.24)
   rails (= 3.0.3)
   sqlite3-ruby
