@@ -1,11 +1,13 @@
 - if @posts.empty? 
-	%p There are no posts at this time.
+  %p There are no posts at this time.
 - else
-	- @posts.each do |post|
-		#article
-			%h4
-				= post.title
-				%span.created_at
-					= post.created_at.strftime("%m-%d-%Y") if post.created_at
-			.content
-				!= RedCloth.new(post.body).to_html
+  - @posts.each do |post|
+    #article
+      %h4
+        = post.title
+        %span.created_at
+          = post.created_at.strftime("%m-%d-%Y") if post.created_at
+      .content
+        != RedCloth.new(post.body).to_html
+      -unless post.tag_list.blank?
+        =render :partial => "shared/tag_list", :locals => { :tag_list => post.tag_list }

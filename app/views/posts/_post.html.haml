@@ -11,6 +11,9 @@
 		%tr
 			%th= f.label 'in nav?'
 			%td= f.check_box :in_navigation
+		%tr
+			%th= f.label 'Tags'
+			%td= f.text_field :tag_list
 	= f.submit 'Update'
 	#textile_defs
 		%h4 textile usage

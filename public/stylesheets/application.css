@@ -72,6 +72,8 @@ h2#content_head{ margin-top: 10px; text-align: center; overflow: visible;}
 .created_at{font-size:10px;font-style:italic;font-weight:normal;display:block;}
 #article .content{padding:2px;}
 #article {margin-bottom:5px;}
+#article .tag_list .name{border:solid 2px #3F3314; -moz-border-radius:5px; padding:1px 5px 1px 8px;margin-right: 5px;background:#DEDF99;}
+#article .tag_list{margin: 10px 0;}
 #content_head{ width: 621px; height: 21px;  background: url("/images/spriteme1.png") -10px -10px;font-family:'IM Fell English';}
 #content_body{ padding: 10px 20px 10px 15px; min-height: 300px; background: url("/images/spriteme2.png") repeat-y -205px 0px;}
 #content_body img{float: right; width: 210px; padding: 0pt; margin-left: 10px; border: 1px solid black;}
