@@ -3,7 +3,9 @@ Weblog::Application.routes.draw do
   resources :posts do
     collection do
       get 'display'
+      match ":name", :to => "posts#tags", :as => 'posts_by_tag_name'
     end
+
   end
   resources :sessions
   
