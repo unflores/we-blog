@@ -3,11 +3,13 @@ Weblog::Application.routes.draw do
   resources :posts do
     collection do
       get 'display'
-      match ":name", :to => "posts#tags", :as => 'posts_by_tag_name'
+      match "tag/:name", :to => "posts#tags", :as => 'by_tag_name'
     end
-
   end
+  
   resources :sessions
+  match '/login',   :to => "sessions#new"
+  match '/logout',  :to => "sessions#destroy"
   
   match ':page_name', :to => "static#show"
   

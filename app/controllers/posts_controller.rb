@@ -29,6 +29,11 @@ class PostsController < ApplicationController
     end
   end
 
+  def tags
+    @posts = Post.tagged_with(params[:name])
+    render :display
+  end
+
   def update
     @post = Post.find(params[:id])
     respond_to do |format|

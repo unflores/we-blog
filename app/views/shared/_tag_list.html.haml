@@ -2,4 +2,4 @@
   %span Tags:
   -tag_list.each do |name|
     %span.name
-      =link_to name, posts_by_tag_name_path(name)
+      =link_to name, by_tag_name_posts_path(:name => name)
