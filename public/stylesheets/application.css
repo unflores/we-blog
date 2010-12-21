@@ -3,7 +3,7 @@
 html{ height: 100%; background: #b7adbd;}
 body{ height: 100%;}
 h1 { font-size: 60px; font-family: 'IM Fell English', Arial, Helvetica, sans-serif;}
-h1 a,h1 a:hover{color:black;text-decoration: none; font-size: 60px; font-family: 'IM Fell English', Arial, Helvetica, sans-serif;}
+h1 a,h1 a:link,h1 a:hover{color:black;text-decoration: none; font-size: 60px; font-family: 'IM Fell English', Arial, Helvetica, sans-serif;}
 h2 { font-size: 175%; text-align: center; font-family: Bitstream Vera Serif, Verdana, Arial, Helvetica, sans-serif;}
 h3 { font-size: 125%; padding-bottom: .5em;}
 h4 { font-size: 110%;}
