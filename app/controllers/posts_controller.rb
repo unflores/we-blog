@@ -1,5 +1,5 @@
 class PostsController < ApplicationController
-  before_filter :admin_required, :except => [ :display, :show ]
+  before_filter :admin_required, :except => [ :display, :show, :tags ]
   def display
     @posts = Post.on_frontpage
   end
