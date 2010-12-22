@@ -49,7 +49,7 @@ class PostsController < ApplicationController
   private 
     def redirect_if_direct_request
       unless request.env['HTTP_USER_AGENT'] =~ /feedburner/i 
-        # redirect_to 'http://feeds.feedburner.com/' and return
+        redirect_to 'http://feeds.feedburner.com/AustinFlores' and return
       end 
     end
 
