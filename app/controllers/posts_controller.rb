@@ -24,7 +24,7 @@ class PostsController < ApplicationController
     else redirect_to new_post_path end
   end
 
-  def tags
+  def tag
     @posts = Post.tagged_with(params[:name])
     render :display
   end
