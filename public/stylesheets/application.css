@@ -60,9 +60,10 @@ table th{ color: black; padding: 5px;}
 /***********************
  header
 ***********************/
-#header{background: url("/images/head_bkg.png") 0 4px repeat-x white;  height: 119px;  }
+#header{position:relative; background: url("/images/head_bkg.png") 0 4px repeat-x white;  height: 119px;  }
 #header h1{ height: 55px; margin-left: 100px; padding-left: 150px; padding-top:64px; background: url(/images/spriteme1.png) -10px -166px; width:490px;}
-#header #description {position:absolute; top:92px;left:697px;}
+#header #description {position:absolute; top:92px;left:730px;}
+#header #rss{position:absolute; top:95px; left:695px; width:38px; height:40px; display:block; background:url("/images/rss.png") no-repeat; text-indent:-9999px;}
 /**********************
  content
 **********************/

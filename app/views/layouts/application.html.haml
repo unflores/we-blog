@@ -12,11 +12,12 @@
     %link{ :href => 'http://fonts.googleapis.com/css?family=IM+Fell+English', :rel => 'stylesheet', :type=>'text/css'}
   %body
     #header
-      %h1=link_to "ctrl 4lt delete me", '/'
+      %h1=link_to "ctrl 4lt delete me", root_path
       %p#description
         The super badassed blog by
         %span.author 
           %a{:href=>"http://www.cloudspace.com/team#austinflores", :target=>'_blank'} Austin Flores
+      %a#rss{:href=> rss_path} rss
     %hr
     %div#nav
       %ul
