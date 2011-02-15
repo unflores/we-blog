@@ -92,7 +92,7 @@ table{margin:0;}
  /********************
   nav
  *********************/ 
-#nav   { float: left; width: 175px; padding-top:25px; margin: 10px 2em 0 2em;  background: url(/images/spriteme3.png)  no-repeat -10px -10px;}
+#nav   { float: left; width: 175px; padding-top:25px; margin: 29px 2em 0 2em;  background: url(/images/spriteme3.png)  no-repeat -10px -10px;}
 #nav ul{font-size: 15px;}
 #nav ul li{background: url(/images/spriteme2.png) -10px 0px; padding: 0; margin: 0; width: 100%;  line-height: 2em; }
 #nav .footer{background: url(/images/spriteme3.png) no-repeat scroll -205px -10px;height:30px;}
