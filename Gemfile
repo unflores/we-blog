@@ -3,7 +3,9 @@ source 'http://rubygems.org'
 gem 'rails', '3.0.3'
 gem 'sqlite3-ruby', :require => 'sqlite3'
 gem 'haml', '3.0.24'
-gem 'RedCloth', '4.2.3'
+gem 'RedCloth','4.2.7'
+gem 'heroku'
+gem 'taps'
 gem 'acts-as-taggable-on'
 
 # To use debugger (ruby-debug for Ruby 1.8.7+, ruby-debug19 for Ruby 1.9.2+)
