@@ -1,7 +1,7 @@
 - form_for(@post) do |f|
 	%table
 		%tr
-			%th= f.label :title
+			%th= f.label 'title (h3.)'
 			%td= f.text_field :title
 		%tr
 			%td{:colspan=>'2'}= f.text_area :body
