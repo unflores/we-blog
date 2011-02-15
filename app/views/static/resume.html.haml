@@ -7,7 +7,9 @@
         %th{:scope=>"col"} address
         %th{:scope=>"col"} phone
       %tr
-        %td{:style=>"text-align:left;"}= link_to 'ctrl4ltdeleteme@gmail.com', '/contact'
+        %td.contacts
+          = link_to 'ctrl4ltdeleteme@gmail.com','mailto:ctrl4ltdeleteme@gmail.com'
+          = link_to 'github.com/unflores', 'http://github.com/unflores'
         %td 4801 Gorham Avenue<br/>Orlando, FL 32817
         %td{:style=>"text-align:right;"} 772-215-5705
         
@@ -21,9 +23,9 @@
           .dates 12-2008 to Present
         %td.responsibilities
           %ul
-            %li Consulting the client on the implementation of new features.  
-            %li Administering and rapidly deploying projects. 
-            %li Researching and implementing new features.
+            %li Consulting clients on the implementation of new features.  
+            %li Configuring and implementing automated testing.
+            %li Arhitecting and writing web applications.
       %tr
         %th.company{:scope => 'row'}
           %h4=link_to "FlorezDesign", 'http://florezdesign.com'
@@ -31,8 +33,9 @@
           .dates 09-2008 to Present
         %td.responsibilities
           %ul
-            %li Implement Content Management Systems.
-            %li Develop database driven websites
+            %li Setting up  Wordpress installations.
+            %li Developing database driven websites.
+            %li Integrating social networking APIs.
       %tr
         %th.company{:scope => 'row'}
           %h4{:title => 'Course Development and Web Services'}=link_to 'CDWS at University of Central Florida', "http://cdws.ucf.edu/"
