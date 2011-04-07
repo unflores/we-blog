@@ -1,13 +1,13 @@
-*{  margin: 0; padding: 0; font-size: 14px; color: black; 
+*{  margin: 0; padding: 0; font-size: 14px;  
  font-family: Arial, Helvetica, sans-serif;}
 html{ height: 100%; background: #b7adbd;}
 body{ height: 100%;}
 h1 { font-size: 52px; font-family: 'IM Fell English', Arial, Helvetica, sans-serif;}
-h1 a,h1 a:link,h1 a:hover{color:black;text-decoration: none; line-height: 84px; font-size: 50px; letter-spacing: 1px; font-family: 'IM Fell English', Arial, Helvetica, sans-serif;}
-h2 { font-size: 24px; text-align: center;line-height:35px; font-family: Bitstream Vera Serif, Verdana, Arial, Helvetica, sans-serif;}
-h3 { font-size: 125%; padding: .2em 0;}
-h4 { font-size: 105%;}
-h4 a{font-size: 15px;color:#5B1B6F;}
+h1 a,h1 a:link,h1 a:hover{color: black; text-decoration: none; line-height: 84px; font-size: 50px; letter-spacing: 1px; font-family: 'IM Fell English', Arial, Helvetica, sans-serif;}
+h2 { margin-bottom: 10px; font-size: 40px; text-align: center;line-height:120%; font-family: Bitstream Vera Serif, Verdana, Arial, Helvetica, sans-serif;}
+h3 { font-size: 25px; padding: .2em 0;}
+h4 { font-size: 20px;}
+h4 a{font-size: color:#5B1B6F;}
 h5 { font-size: 100%; margin-left: 20px;}
 p  { font-size: 13px; padding: 10px 0; margin: 0 15px}
 ul { list-style: none;font-size: 15px;}
@@ -21,7 +21,7 @@ hr { border: solid 1px #454148;}
 .m4x{padding-left: 28px;}
 .hidden{ display: none;}
 .c{ text-align:center;}
-a,a:link {  text-decoration: underline;font-size:12px;color:#5B1B6F;}
+a, a:link{  text-decoration: underline; font-size: 12px; color: #350554; font-weight:bold;}
 a:hover{   text-decoration: none;  }
 .error{ color: red; display: block;}
 .errorExplanation{padding: 5px; background: none repeat scroll 0% 0% rgb(255, 191, 198); border: 3px solid rgb(111, 41, 49); -moz-border-radius: 8px 8px 8px 8px;-webkit-border-radius: 8px;}
@@ -70,16 +70,17 @@ table th{ color: black; padding: 5px;}
 /**********************
  content
 **********************/
-#wrapper{ float:left; width:621px}
+#wrapper{ float:left; width:730px}
 h2#content_head{ margin-top: 10px; text-align: center; overflow: visible;}
 #content_head {}
 .created_at{font-size:10px;font-style:italic;font-weight:normal;display:block;margin: 2px 0 0 0;}
 #article .content{padding: 0 2px;}
 #article {margin-bottom:5px;}
 #article .tag_list .name{border:solid 2px #3F3314; -moz-border-radius:5px;-webkit-border-radius: 5px; padding:1px 5px 1px 8px;margin-right: 5px;background:#DEDF99;}
-#article .tag_list .name a{color:#3F3314; text-decoration:none;}
+#article .tag_list .name a{color:#3F3314; text-decoration:none; font-size: 15px;}
 #article .tag_list{margin: 10px 0;}
 #content_body h2{ font-family:'IM Fell English';}
+#content_body p, #content_body a{ font-size: 20px; }
 #content_body{ border: 3px solid #222; box-shadow:3px 3px 6px 1px #555;  margin: 0 0 20px 0; padding: 5px 20px 10px 15px; min-height: 300px;background:#EBEBE3; }
 #content_body img{float: right; width: 210px; padding: 0pt; margin-left: 10px; border: 1px solid black;}
 #content_foot{ background: #EBEBE3; width: 621px; height: 28px;}
@@ -96,7 +97,7 @@ table{margin:0;}
 #nav { border: 3px solid #222; box-shadow: 3px 3px 6px 1px #555;  float: left; width: 175px; padding:25px 0; margin: 20px 2em 0 2em;  background: #EBEBE3;}
 #nav ul{font-size: 15px;}
 #nav ul li{ padding: 0; margin: 0; width: 100%;  line-height: 2em; }
-#nav ul li a:link, #nav li a:visited{ margin: 0 0; display: block; text-align: center; font-family: Verdana, Arial, Helvetica, sans-serif; width: 100%; min-height:15px; font-size: 1em; font-weight:bold; text-decoration: none; color: black;outline:none;}
+#nav ul li a:link, #nav li a:visited{ margin: 0 0; display: block; text-align: center; font-family: Verdana, Arial, Helvetica, sans-serif; width: 100%; min-height:15px; font-size: 20px; font-weight:bold; text-decoration: none; color: black;outline:none;}
 #nav ul li a:hover, a:active{ width: 100%; text-decoration: underline;}
 #nav h4{text-align:center;color:#AF6F00; font-size:18px;}
 #nav ul li ul li{font-size:11px;}
@@ -133,7 +134,7 @@ table#contact_info .contacts a{ display:block;line-height:17px}
 /**************************
 	Twitter widget
 **************************/
-#twitter{float: left; width: 300px; margin: 18px 20px;}
+#twitter{float: left; width: 300px; margin: 18px 20px; display: none;}
 #twitter p{border-bottom: solid 1px black;margin-left:3px;}
 #twitter h2 {text-align:left;border-bottom:2px solid black;}
 
