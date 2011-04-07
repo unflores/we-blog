@@ -19,7 +19,7 @@
           %a{:href=>"http://www.cloudspace.com/team#austinflores", :target=>'_blank'} Austin Flores
       %a#rss{:href=> rss_path} rss
     %hr
-    %div#nav
+    %div#nav.rad20
       %ul
         %li=link_to "Home", '/'
         -if navigation_items.any?
@@ -29,14 +29,12 @@
         - if admin? session
           = render :partial => 'layouts/admin_nav'
         %li=link_to "Github", 'http://github.com/unflores'
-      .footer &nbsp;    
     %p= flash[:message]
 
     #wrapper
-      %h2#content_head= if yield(:content_title).blank? then 'The Blag' else yield :content_title end
-      #content_body
+      #content_body.rad20
+        %h2= if yield(:content_title).blank? then 'The Blag' else yield :content_title end
         = yield
-      #content_foot  &nbsp;
 
       #foot_wrapper
         #foot_body
