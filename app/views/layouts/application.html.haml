@@ -45,16 +45,7 @@
       .topics
         %span.rad9 projects
         %span.rad9 tweets
-      .status
-        %p Favorite part of BDD is that it familiarizes me with errors. If code throws an error, it's much nicer when it throws a familiar one. #bdd
-        %span.date 10-10-10 
-      .status
-        %p Favorite part of BDD is that it familiarizes me with errors. If code throws an error, it's much nicer when it throws a familiar one. #bdd
-        %span.date 10-10-10 
-      .status
-        %p Favorite part of BDD is that it familiarizes me with errors. If code throws an error, it's much nicer when it throws a familiar one. #bdd
-        %span.date 10-10-10 
-      /= render :partial => 'layouts/tweet_stream', :locals => { :tweets => tweets}
+      = render :partial => 'layouts/tweet_stream', :collection => @tweets
     :javascript
       var _gaq = _gaq || [];
       _gaq.push(['_setAccount', 'UA-20366055-1']);
