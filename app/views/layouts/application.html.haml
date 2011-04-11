@@ -40,7 +40,20 @@
         #foot_body
           %p#footer
             != "Brought to you with the help of #{link_to "Rails", "http://rubyonrails.org/"} and #{link_to "Heroku", "http://heroku.com"} goodness."
-    #twitter
+    #twitter.rad20
+      %h3 On the stack
+      .topics
+        %span.rad9 projects
+        %span.rad9 tweets
+      .status
+        %p Favorite part of BDD is that it familiarizes me with errors. If code throws an error, it's much nicer when it throws a familiar one. #bdd
+        %span.date 10-10-10 
+      .status
+        %p Favorite part of BDD is that it familiarizes me with errors. If code throws an error, it's much nicer when it throws a familiar one. #bdd
+        %span.date 10-10-10 
+      .status
+        %p Favorite part of BDD is that it familiarizes me with errors. If code throws an error, it's much nicer when it throws a familiar one. #bdd
+        %span.date 10-10-10 
       /= render :partial => 'layouts/tweet_stream', :locals => { :tweets => tweets}
     :javascript
       var _gaq = _gaq || [];
