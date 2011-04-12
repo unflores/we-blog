@@ -34,6 +34,7 @@ GEM
     builder (2.1.2)
     configuration (1.2.0)
     crack (0.1.8)
+    diff-lcs (1.1.2)
     erubis (2.6.6)
       abstract (>= 1.0.0)
     haml (3.0.24)
@@ -76,6 +77,19 @@ GEM
     rake (0.8.7)
     rest-client (1.6.1)
       mime-types (>= 1.16)
+    rspec (2.5.0)
+      rspec-core (~> 2.5.0)
+      rspec-expectations (~> 2.5.0)
+      rspec-mocks (~> 2.5.0)
+    rspec-core (2.5.1)
+    rspec-expectations (2.5.0)
+      diff-lcs (~> 1.1.2)
+    rspec-mocks (2.5.0)
+    rspec-rails (2.5.0)
+      actionpack (~> 3.0)
+      activesupport (~> 3.0)
+      railties (~> 3.0)
+      rspec (~> 2.5.0)
     sequel (3.17.0)
     sinatra (1.0)
       rack (>= 1.0)
@@ -104,5 +118,6 @@ DEPENDENCIES
   heroku
   httparty
   rails (= 3.0.3)
+  rspec-rails (>= 2.5.0)
   sqlite3-ruby
   taps

@@ -8,6 +8,11 @@ gem 'heroku'
 gem 'taps'
 gem 'acts-as-taggable-on'
 gem 'httparty'
+
+group :development, :test do
+  gem "rspec-rails", ">= 2.5.0"
+end
+
 # To use debugger (ruby-debug for Ruby 1.8.7+, ruby-debug19 for Ruby 1.9.2+)
 
 # Bundle gems for the local environment. Make sure to
