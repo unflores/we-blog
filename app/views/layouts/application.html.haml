@@ -45,7 +45,7 @@
       .topics
         %span.rad9 projects
         %span.rad9 tweets
-      = render :partial => 'layouts/tweet_stream', :collection => @tweets
+      = render @tweets
     :javascript
       var _gaq = _gaq || [];
       _gaq.push(['_setAccount', 'UA-20366055-1']);
