@@ -1,3 +1,3 @@
 .status
   %p!=linkify_tweet tweet.status
-  %span.date=tweet.twitter_created_at
+  %span.date="posted #{time_ago_in_words tweet.twitter_created_at} ago"

@@ -1,10 +1,12 @@
 module ApplicationHelper
   def linkify(text)
-    text.gsub(/(http:\/\/[^\s]*)/,'<a href="\1" target="_blank">\1</a>') unless anchor_exists text
+    return text if anchor_exists text
+    text.gsub(/(http:\/\/[^\s]*)/,'<a href="\1" target="_blank">\1</a>')
   end
 
   def linkify_tweet text
-    text.gsub(/@([a-zA-Z\_]+)/, '<a href="http://twitter.com/#!/\1">@\1</a>') unless anchor_exists text
+    text = linkify text
+    text.gsub(/@([a-zA-Z\_]+)/, '<a href="http://twitter.com/#!/\1">@\1</a>')
   end
 
   def anchor_exists text
