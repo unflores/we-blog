@@ -1,7 +1,7 @@
 *{  margin: 0; padding: 0; font-size: 14px;  
  font-family: Arial, Helvetica, sans-serif;}
 html{ height: 100%; background: #b7adbd;}
-body{ height: 100%; min-width: 1300px;}
+body{ height: 100%; min-width: 1165px;}
 h1 { font-size: 52px; font-family: 'IM Fell English', Arial, Helvetica, sans-serif;}
 h1 a,h1 a:link,h1 a:hover{color: black; text-decoration: none; line-height: 84px; font-size: 50px; letter-spacing: 1px; font-family: 'IM Fell English', Arial, Helvetica, sans-serif;}
 h2 { margin-bottom: 10px; font-size: 40px; text-align: center;line-height:120%; font-family: Bitstream Vera Serif, Verdana, Arial, Helvetica, sans-serif;}
@@ -22,7 +22,7 @@ hr { border: solid 1px #454148;}
 .m4x{padding-left: 28px;}
 .hidden{ display: none;}
 .c{ text-align:center;}
-a, a:link{  text-decoration: underline; font-size: 12px; color: #350554; font-weight:bold;}
+a, a:link{  text-decoration: underline; font-size: 12px; color: #623; font-weight:bold;}
 a:hover{   text-decoration: none;  }
 .error{ color: red; display: block;}
 .errorExplanation{padding: 5px; background: none repeat scroll 0% 0% rgb(255, 191, 198); border: 3px solid rgb(111, 41, 49); -moz-border-radius: 8px 8px 8px 8px;-webkit-border-radius: 8px;}
@@ -71,7 +71,7 @@ table th{ color: black; padding: 5px;}
 /**********************
  content
 **********************/
-#wrapper{ float:left; width:730px}
+#wrapper{ float:left; width:640px}
 h2#content_head{ margin-top: 10px; text-align: center; overflow: visible;}
 #content_head {}
 .created_at{font-size:10px;font-style:italic;font-weight:normal;display:block;margin: 2px 0 0 0;}
@@ -95,7 +95,7 @@ table{margin:0;}
  /********************
   nav
  *********************/ 
-#nav { border: 3px solid #222; box-shadow: 3px 3px 6px 1px #555;  float: left; width: 175px; padding:25px 0; margin: 20px 20px 0 2em;  background: #EBEBE3;}
+#nav { border: 3px solid #222; box-shadow: 3px 3px 6px 1px #555;  float: left; width: 160px; padding:25px 0; margin: 20px 20px 0 2em;  background: #EBEBE3;}
 #nav ul{font-size: 15px;}
 #nav ul li{ padding: 0; margin: 0; width: 100%;  line-height: 2em; }
 #nav ul li a:link, #nav li a:visited{ margin: 0 0; display: block; text-align: center; font-family: Verdana, Arial, Helvetica, sans-serif; width: 100%; min-height:15px; font-size: 20px; font-weight:bold; text-decoration: none; color: black;outline:none;}
@@ -135,7 +135,7 @@ table#contact_info .contacts a{ display:block;line-height:17px}
 /**************************
 	Twitter widget
 **************************/
-#twitter{ background: #EBEBE3; border: 3px solid #222; box-shadow:3px 3px 6px 1px #555; float: left; width: 250px; margin: 3px 20px 18px; padding: 20px; }
+#twitter{ background: #EBEBE3; border: 3px solid #222; box-shadow:3px 3px 6px 1px #555; float: left; width: 220px; margin: 3px 20px 18px; padding: 20px; }
 #twitter p{ margin: 3px; padding-bottom: 0px; }
 #twitter h3 { text-align: center; }
 #twitter .topics{ text-align: center;  margin: 10px 0;}

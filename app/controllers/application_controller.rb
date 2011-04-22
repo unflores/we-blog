@@ -1,6 +1,7 @@
 class ApplicationController < ActionController::Base
   protect_from_forgery
-  helper_method :admin?, :navigation_items, :tweets
+  helper_method :admin?, :navigation_items
+  before_filter :tweets
   rescue_from ActionController::RoutingError, :with => :record_not_found
   rescue_from ActionView::MissingTemplate, :with => :record_not_found
   
@@ -11,9 +12,9 @@ class ApplicationController < ActionController::Base
     end
   end
 
-  # def tweets
-  #   @tweets ||= Tweet.front_page
-  # end
+   def tweets
+     @tweets ||= Tweet.most_recent
+   end
   
   def admin_required
     unless admin?(session)

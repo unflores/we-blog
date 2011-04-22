@@ -3,7 +3,7 @@ class PostsController < ApplicationController
   before_filter :get_resource, :only => [:show, :edit, :destroy, :update]
   def display
     @posts  = Post.on_frontpage
-    @tweets = Tweet.most_recent
+    
     respond_to do |format| 
       format.html
       format.rss{ redirect_if_direct_request }
