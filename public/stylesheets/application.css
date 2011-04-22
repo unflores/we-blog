@@ -108,7 +108,9 @@ table{margin:0;}
 **************************/
 #resume h1,#resume h2,#resume h3,#resume h4,#resume h5{margin:0;}
 #resume .title{float:left; width:200px;}
-table#contact_info{ width: 580px; border: none;border-top:1px solid;}
+#resume a, #resume p{ font-size: 12px; }
+#resume h4, #resume h4 a{ font-size: 16px; }
+table#contact_info{ width: 100%; border: none;border-top:1px solid;}
 table#contact_info td{ width: 32%; text-align: center;vertical-align:top;}
 table#contact_info .contacts{ text-align:left; }
 table#contact_info .contacts a{ display:block;line-height:17px} 
@@ -118,8 +120,9 @@ table#contact_info .contacts a{ display:block;line-height:17px}
 #resume_data th,table#resume_data td{padding:10px 0;}
 #resume_data .merits ul,#resume_data .responsibilities ul{list-style: circle;margin-bottom:5px;}
 #resume h3{text-align:center;}
+#resume_data li{ line-height: 120%; }
 #resume li ul{ list-style: square; }
-#resume li ul li{ padding-bottom: .5em;}
+#resume li ul li{ padding-bottom: .5em; }
 #resume li h3{ margin: 1em 0 0 0; font-size: 1em;}
 #resume .company{}
 
