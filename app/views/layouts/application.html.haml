@@ -1,11 +1,12 @@
 !!! 5
 %html
   %head
-    %meta{:name=>"author", :content=>"Austin Flores"}
-    %meta{:name=>"keywords", :content=>"Ctrl4ltdeleteme, portfolio, Austin Flores, blog"}
-    %meta{:'http-equiv'=>"Content-Type", :content=>"text/html; charset=utf-8"}
-    %meta{:name=>"google-site-verification",:content=>"LVaZcDWC-XvEg2q_GnbnMdCd04kcl230qQswuv2Rk2M"}
-    %title Ctrl4ltdeleteme - Blog
+    %meta{ :name => "author",      :content => "Austin Flores" }
+    %meta{ :name => "keywords",    :content => "Ctrl4ltdeleteme, portfolio, Austin Flores, blog" }
+    %meta{ :name => "description", :content => "A blog about anything that interests me.  Typically, it will involve: Ruby, Rails, programming in general, or whatever I happen to be doing at the moment." }
+    %meta{ :'http-equiv' => "Content-Type", :content=>"text/html; charset=utf-8" }
+    %meta{ :name => "google-site-verification", :content => "LVaZcDWC-XvEg2q_GnbnMdCd04kcl230qQswuv2Rk2M" }
+    %title Austin Flores - Blog
     = stylesheet_link_tag 'reset', 'application'
     = javascript_include_tag 'jquery', 'application', 'rails'
     = csrf_meta_tag
@@ -16,8 +17,8 @@
       %p#description
         The super badassed blog by
         %span.author 
-          %a{:href=>"http://www.cloudspace.com/team#austinflores", :target=>'_blank'} Austin Flores
-      %a#rss{:href=> rss_path} rss
+          %a{ :href => "http://www.cloudspace.com/team#austinflores", :target=>'_blank'} Austin Flores
+      %a#rss{ :href => rss_path} rss
     %hr
     %div#nav.rad20
       %ul
