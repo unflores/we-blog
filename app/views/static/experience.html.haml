@@ -1,0 +1,168 @@
+-content_for :content_title, 'Austin Flores'
+#resume
+  %table{:id=>"contact_info"}
+    %tbody
+      %tr{:style=>"display:none;"}
+        %th{:scope=>"col"} email
+        %th{:scope=>"col"} address
+        %th{:scope=>"col"} phone
+      %tr
+        %td.contacts
+          = link_to 'AustinFlores.com','AustinFlores.com'
+          = link_to 'github.com/unflores', 'http://github.com/unflores'
+        %td 23 Rue Notre Dame de Nazareth<br/>Paris, France 75003
+        %td{:style=>"text-align:right;"} 
+          = '+33 06.50.05.95.23'
+          = link_to 'me@AustinFlores.com','mailto:me@AustinFlores.com'
+  %h3 Core Compentencies
+  %table#resume_data
+    %tbody
+      %tr
+        %th.company{:scope => 'row'}
+          %h4='Engineer'
+        %td.responsibilities
+          %ul
+            %li Use Ruby on Rails, various Ruby gems, node.js, PHP, XHTML, JavaScript, CSS and SQL to create web applications.
+            %li Develop software using the agile paradigm while pair programming.
+            %li Implement behavior driven development and automating testing using Selenium, Steak, Nodeunit, RSPEC and Cucumber. 
+            %li Experience scaling high traffic websites with Memcache and MongoDB
+            %li Consult clients on the architecture of new features.
+            %li Refactor legacy code.
+      %tr
+        %th.company{:scope => 'row'}
+          %h4='System Administration'
+        %td.responsibilities
+          %ul
+            %li Set up deployment to Amazon EC2 nodes and Heroku.
+            %li Create system setups using Chef.
+            %li Deploy using Hudson CI and Capistrano
+            %li Configure local development environments with RVM, VirtualBox and Vagrant.
+      %tr
+        %th.company{:scope => 'row'}
+          %h4='Miscellaneous Technologies'
+        %td.responsibilities
+          %ul
+            %li 
+              %em 
+                Version Control Systems:
+              SVN & Git
+            %li 
+              %em 
+                JavaScript:
+              Pure MVC, JQuery & node.js
+            %li 
+              %em 
+                Social Media APIs:
+              Twitter & Facebook
+            %li 
+              %em 
+                Project Management Software:
+              Pivotal Tracker, Basecamp & Unfuddle
+            %li 
+              %em 
+                Content Management Systems: 
+              Wordpress, Drupal & Textpattern%li JavaScript: JQuery & node.js  
+  %h3 Experience
+  %table#resume_data
+    %tbody
+      %tr
+        %th.company{:scope => 'row'}
+          %h4=link_to 'Smartdate', 'http://smartdate.com'
+          %h5 Software Engineer
+          .dates 05-2011 to Present
+        %td.responsibilities
+          %ul
+            %li Collaborate on a start-up team using agile and BDD methods.
+            %li Refactor legacy code to compensate for expanding website scope.
+            %li Assist in the architecture and development of code that allows for scaling a site with millions of users.
+          %h6 Major Development Projects:
+          %ul
+            %li Create interface for accessing API data to alleviate high system load.
+            %li Develop custom business analytics.
+            %li Maintain and add to Pure MVC chat application.
+      %tr  
+        %th.company{:scope => 'row'}
+          %h4=link_to 'Cloudspace', 'http://cloudspace.com'
+          %h5 Lead Engineer
+          .dates 12-2008 to 04-2011
+        %td.responsibilities
+          %ul
+            %li Constructed web applications from the ground up in a pair programming and agile development environment.
+            %li Sent daily updates and met weekly with long distance clients.
+            %li Refactored legacy code and built automated tests.
+            %li Mentored new hires in business processes.
+          %h6 Major Development Projects:
+          %ul
+            %li Cloudspace Mockups (2011)
+            %li 
+              58 Phases: 
+              =link_to 'WantACode.com', "http://WantACode.com"
+              , 
+              =link_to 'CouponGurus.com', "htp://CouponGurus.com"
+              , 
+              =link_to 'ShippingDudes.com', "http://ShippingDudes.com" 
+              & 
+              =link_to 'RetailSteal.com',"RetailSteal.com" 
+              (2010)
+            %li 
+              RentWiki: 
+              =link_to 'RentWiki.com', "http://RentWiki.com" 
+              (2009 - 2010)  
+            %li Landery (2009)
+            %li Landery Sinatra (2009)
+            %li 
+              Thingfo: Including 
+              =link_to 'ChuckMeOut.com', "http://ChuckMeOut.com"
+              (2009)
+      %tr
+        %th.company{:scope => 'row'}
+          %h4{:title => 'Course Development and Web Services'}=link_to 'CDWS at University of Central Florida', "http://cdws.ucf.edu/"
+          %h5 Web Developer
+          .dates 06-2007 to 12-2009
+        %td.responsibilities
+          %ul
+            %li Developed Section 508 compliant XHTML/CSS content for online courses.
+            %li Headed CMS deployment and training for UCF online learning websites. 
+            %li Assisted diverse student body with online learning technical inquiries.
+          %h6 Major Development Projects:
+          %ul
+            %li 
+              Teaching Online: 
+              =link_to 'Teach.ucf.edu', "http://Teach.ucf.edu" 
+              (2008)
+            %li 
+              Information Literacy: 
+              =link_to 'InfoLit.ucf.edu',"http://InfoLit.ucf.edu" 
+              (2008)
+      %tr
+        %th.company{:scope => 'row'}
+          %h4='FedEx'
+          %h5 Team Leader
+          .dates 05-2005 to 05-2007
+        %td.responsibilities
+          %ul
+            %li   Managed team of ten people.
+            %li   Facilitated and directed work flow during times of heavy volume.
+      %tr
+        %th.company{:scope => 'row'}
+          %h4='Buckhead Beef'
+          %h5 Computer Technician
+          .dates 06-2004 to 01-2005
+        %td.responsibilities
+          %ul
+            %li Assembled computers and connected them to the intranet.
+            %li Set up an internal website to import time tracking data.
+            %li Troubleshot computer issues.
+  %h3 Education
+  %table#resume_data
+    %tbody
+      %tr
+        %th.university{:scope => 'row'}
+          %h4{:title=>'University of Central Florida'}=link_to 'University of Central Florida', 'http://www.ucf.edu'
+        %td.merits
+          %ul
+            %li Bachelor in Computer Science
+            %li Minor in Spanish - Fluent in Spanish
+            %li Minor in Mathematics
+          
+  
