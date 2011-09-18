@@ -3,13 +3,14 @@
   %table
     %tr
       %th{:scope=>'col'} Title
-      %th{:scope=>'col', :colspan=>'2'} Options
+      %th{:scope=>'col'} Options
       %th{:scope=>'col'} In Blog?
     - @posts.each do |post|
       %tr
         %td= link_to post.title, edit_post_path(post)
-        %td= link_to 'Edit', edit_post_path(post), :class=>'edit',:title=>'edit'
-        %td= link_to 'Destroy', post, :confirm => 'Are you sure?', :method => :delete, :class=>'destroy',:title=>'delete'
+        %td
+          = link_to 'Edit', edit_post_path(post), :class=>'edit', :title=>'edit'
+          = link_to 'Destroy', post, :confirm => 'Are you sure?', :method => :delete, :class=>'destroy', :title=>'delete'
         %td
           -if post.published
             %span.live{:title=>'yes'} yes

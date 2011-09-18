@@ -1,0 +1,165 @@
+@mixin content_pane{
+  border: 3px solid #222; 
+  box-shadow: 3px 3px 6px 1px #555;
+  padding: 5px 20px 10px 15px; 
+  background: #EBEBE3;
+  @include rounded_corners(20px)
+}
+
+@mixin rounded_corners($radius: 8px){
+  -moz-border-radius: $radius; 
+  -webkit-border-radius: $radius;
+}
+
+*{  margin: 0; padding: 0; font-size: 14px;  
+ font-family: Arial, Helvetica, sans-serif;}
+html{ height: 100%; background: #b7adbd;}
+body{ height: 100%;}
+h1 { font-size: 52px; font-family: 'IM Fell English', Arial, Helvetica, sans-serif;}
+h1 a,h1 a:link,h1 a:hover{color: black; text-decoration: none; line-height: 84px; font-size: 50px; letter-spacing: 1px; font-family: 'IM Fell English', Arial, Helvetica, sans-serif;}
+h2 { margin-bottom: 10px; font-size: 40px; text-align: center;line-height:120%; font-family: Bitstream Vera Serif, Verdana, Arial, Helvetica, sans-serif;}
+h3 { font-size: 25px; padding: .2em 0;}
+h4 { font-size: 20px;}
+h4 a{ color:#5B1B6F; }
+h5 { font-size: 100%; margin-left: 20px;}
+p  { font-size: 13px; padding: 10px 0; margin: 0 15px}
+ul { list-style: none;font-size: 15px;}
+
+img{border: none;}
+hr { border: solid 1px #454148;}
+
+.m2x{padding-left: 10px;}
+.m3x{padding-left: 18px;}
+.m4x{padding-left: 28px;}
+.hidden{ display: none;}
+.c{ text-align:center;}
+a, a:link{  text-decoration: underline; font-size: 12px; color: #350554; font-weight:bold;}
+a:hover{   text-decoration: none;  }
+.error{ color: red; display: block;}
+.errorExplanation{padding: 5px; background: none repeat scroll 0% 0% rgb(255, 191, 198); border: 3px solid rgb(111, 41, 49); -moz-border-radius: 8px 8px 8px 8px;-webkit-border-radius: 8px;}
+.errorExplanation h3{text-align:center;}
+.errorExplanation ul{list-style:inside circle; margin-left:30px;}
+/********** generic_form *************/  
+form{  padding: 0px; margin: 0;}
+form fieldset{  border: solid 1px #b7adbd; padding: 5px; }
+form input{ margin: 0; border: 1px solid #CCF;}
+form select{ margin: 0 5px 0 5px; border: 1px solid #CCF; width: 100px; }
+form input:focus, form select:focus, option:focus{ border: 1px solid #487305; outline:none; }
+form input.radio:focus{ outline: none; border: none; }
+form legend{ color: #000; font-size: 110%; font-weight: bold; }
+form label{ padding: 0; }
+form textarea{ width: 100%; height: 20em; border: 1px solid #CCF;  padding: 0; margin: 0; }
+form textarea:focus{ border: 1px solid #487305; }
+form button{ margin: 10px 0 0 0;  background-color: #FFF;  color: black;  border: 3px double #4B5320; }
+form ul{ padding: 0; margin: 0; }
+form ul li{ list-style-type: none;   margin: 1em 0 0 0;  }
+form #subject { width: 250px; }
+form #post_submit{margin-top: 10px; width: 200px; height: 50px; font-size: 30px;cursor:pointer;}
+.no_send{display: none;}
+#textile_defs{background:#D3D1DF; -moz-border-radius:5px; -webkit-border-radius: 5px; padding:5px;margin-top:5px;border: 1px solid #B5B3BF;}
+#textile_defs h4{text-align:center;}
+#textile_defs ul{text-align:center;}
+#textile_defs ul li{line-height:10px;font-size:10px;display: inline;font-style:italic;border-right:solid #4F4F4F 1px;padding:0 5px;color:#4F4F4F;}
+#textile_defs ul li:last-child{border:none;}
+
+/*********** generic table ************/
+table {	background-color: transparent; text-align: left; border-spacing: 0px; 
+        padding: 0 0 20px 0; border: 1px solid #baaea3;width:100%;}
+table td{ padding: 5px; height: 30px; background-color: transparent; color: #816658; 
+         }
+table tr.hidden_atts{ display:none;}
+table th{ color: black; padding: 5px;}
+.edit{background:url("/images/edit.gif") no-repeat 0 0; text-indent:-9999px; display: inline-block; height:24px;width:24px;outline:none;}
+.destroy{background:url("/images/trash.gif") no-repeat 0 0; text-indent:-9999px;display: inline-block; height:20px;width:20px;outline: none;}
+.live{ background:url("/images/check.png") no-repeat 0 0; text-indent:-9999px;display: inline-block; height:20px; width: 20px; outline: none;}
+/***********************
+ header
+***********************/
+#header{position:relative; background: url("/images/head_bkg.png") 0 4px repeat-x white;  height: 119px;  }
+#header h1{ height: 55px; margin-left: 100px; padding-left: 150px; padding-top:64px; background: url(/images/spriteme1.png) -10px -166px; width:490px;}
+#header #description {position:absolute; top:92px;left:730px;}
+#header #rss{position:absolute; top:95px; left:715px; width:38px; height:40px; display:block; background:url("/images/rss.png") no-repeat; text-indent:-9999px;}
+/**********************
+ content
+**********************/
+#wrapper{ float:left; width:730px}
+h2#content_head{ margin-top: 10px; text-align: center; overflow: visible;}
+#content_head {}
+.created_at{font-size:10px;font-style:italic;font-weight:normal;display:block;margin: 2px 0 0 0;}
+#article .content{padding: 0 2px;}
+#article {margin-bottom:5px;}
+#article .tag_list .name{border:solid 2px #3F3314; -moz-border-radius:5px;-webkit-border-radius: 5px; padding:1px 5px 1px 8px;margin-right: 5px;background:#DEDF99;}
+#article .tag_list .name a{color:#3F3314; text-decoration:none; font-size: 15px;}
+#article .tag_list{margin: 10px 0;}
+#content_body h2{ font-family:'IM Fell English';}
+#content_body p, #content_body a{ font-size: 20px; }
+#content_body{ min-height: 300px; @include content_pane; margin: 0 0 20px 0; }
+#content_body img{float: right; width: 210px; padding: 0pt; margin-left: 10px; border: 1px solid black;}
+#content_foot{ background: #EBEBE3; width: 621px; height: 28px;}
+table{margin:0;}
+/**********************
+ footer
+**********************/
+#foot_wrapper{ float: left; background: no-repeat url(); height: 137px;}
+#foot_body{margin-left: 95px; padding-right:25px; height: 58px; width: 462px; background: url(/images/spriteme1.png) no-repeat -10px -94px; clear:both;}
+#foot_body p{ text-align: center;}
+ /********************
+  nav
+ *********************/ 
+#nav {  
+  @include rounded_corners( 20px );
+  @include content_pane;
+
+  float: left; 
+  width: 175px; 
+  margin: 20px 2em 0 2em;
+  padding: 25px 0; 
+}
+#nav ul{font-size: 15px;}
+#nav ul li{ padding: 0; margin: 0; width: 100%;  line-height: 2em; }
+#nav ul li a:link, #nav li a:visited{ margin: 0 0; display: block; text-align: center; font-family: Verdana, Arial, Helvetica, sans-serif; width: 100%; min-height:15px; font-size: 20px; font-weight:bold; text-decoration: none; color: black;outline:none;}
+#nav ul li a:hover, a:active{ width: 100%; text-decoration: underline;}
+#nav h4{text-align:center;color:#AF6F00; font-size:18px;}
+#nav ul li ul li{font-size:11px;}
+#active{ text-decoration: underline; }
+/*************************
+ Resume
+**************************/
+#resume h1,#resume h2,#resume h3,#resume h4,#resume h5{margin:0;}
+#resume .title{float:left; width:200px;}
+table#contact_info{  border: none;border-top:1px solid;}
+table#contact_info td{ width: 32%; text-align: center;vertical-align:top;}
+table#contact_info .contacts{ text-align:left; }
+table#contact_info .contacts a{ display:block;line-height:17px;}
+ 
+#resume_data .dates{font-size: 10px; font-weight: normal;}
+#resume_data {border:none;}
+#resume_data th{ vertical-align: top;width:200px;}
+#resume_data th,table#resume_data td{padding:10px 0;}
+#resume_data .merits ul,#resume_data .responsibilities ul{list-style: circle;margin-bottom:5px; margin-left: 20px}
+#resume h3{text-align:center;}
+#resume li ul{ list-style: square;}
+#resume li ul li{ padding-bottom: .5em;}
+#resume li h3{ margin: 1em 0 0 0; font-size: 1em;}
+#resume .company{}
+#resume #resume_data .responsibilities li{ line-height: 140%; }
+#resume #resume_data .responsibilities h6{ margin-top: 10px; margin-left: 40px; }
+#resume #resume_data .responsibilities a{ font-size: 17px; }
+/**************************
+ portfolio
+**************************/
+#work_container{ min-height: 325px;padding-top: 10px;}
+#work_frame{ width: 400px; min-height: 325px; margin: 0 auto; }
+#work_frame p,#work_frame ul{ padding-left: 50px; margin-left:0;}
+#work_frame img {}
+.portfolio_list{ text-align: center;}
+.portfolio_list li{ display: inline; }
+/**************************
+	Twitter widget
+**************************/
+#twitter{float: left; width: 300px; margin: 18px 20px; display: none;}
+#twitter p{border-bottom: solid 1px black;margin-left:3px;}
+#twitter h2 {text-align:left;border-bottom:2px solid black;}
+
+pre {display: block; margin: 5px 0; white-space: pre; overflow: auto; line-height: 1.4; border: 3px solid #ccc; background: #ece9d8; padding: 5px; -moz-border-radius:10px; -webkit-border-radius: 10px;}
+#foot_wrapper {background-image: url(/images/spriteme1.png); background-position: -10px -305px;}
