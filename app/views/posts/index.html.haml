@@ -1,4 +1,7 @@
+%p.new_post
+  =link_to "+ New Post", new_post_path
 %h3 Listing posts
+
 -if @posts.any?
   %table
     %tr

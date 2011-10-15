@@ -542,3 +542,6 @@ pre {
 #foot_wrapper {
   background-image: url(/images/spriteme1.png);
   background-position: -10px -305px; }
+  .new_post{ 
+    float: right;
+  }
