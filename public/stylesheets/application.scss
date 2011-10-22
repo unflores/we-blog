@@ -69,8 +69,26 @@ table td{ padding: 5px; height: 30px; background-color: transparent; color: #816
          }
 table tr.hidden_atts{ display:none;}
 table th{ color: black; padding: 5px;}
-.edit{background:url("/images/edit.gif") no-repeat 0 0; text-indent:-9999px; display: inline-block; height:24px;width:24px;outline:none;}
-.destroy{background:url("/images/trash.gif") no-repeat 0 0; text-indent:-9999px;display: inline-block; height:20px;width:20px;outline: none;}
+
+@mixin admin-button($name, $size) {
+  background:url("/images/#{$name}.gif") no-repeat 0 0; 
+  text-indent:-9999px; 
+  display: inline-block; 
+  height: $size;
+  width: $size; //24px
+  outline:none;
+}
+#wrapper {
+  .edit{
+    @include admin-button("edit", 24px);
+  }
+  .destroy{
+    @include admin-button("trash", 20px);
+  }
+  .destroy:active, .edit:active{
+    display: inline-block;
+  }
+}
 .live{ background:url("/images/check.png") no-repeat 0 0; text-indent:-9999px;display: inline-block; height:20px; width: 20px; outline: none;}
 /***********************
  header
