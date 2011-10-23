@@ -84,6 +84,7 @@ table th{ color: black; padding: 5px;}
   }
   .destroy{
     @include admin-button("trash", 20px);
+    margin-right: 5px;
   }
   .destroy:active, .edit:active{
     display: inline-block;
