@@ -259,7 +259,6 @@ table th {
   margin-left: 100px;
   padding-left: 150px;
   padding-top: 64px;
-  background: url(/images/spriteme1.png) -10px -166px;
   width: 490px; }
 
 #header #description {
@@ -362,7 +361,6 @@ table {
   padding-right: 25px;
   height: 58px;
   width: 462px;
-  background: url(/images/spriteme1.png) no-repeat -10px -94px;
   clear: both; }
 
 #foot_body p {
@@ -540,10 +538,6 @@ pre {
   padding: 5px;
   -moz-border-radius: 10px;
   -webkit-border-radius: 10px; }
-
-#foot_wrapper {
-  background-image: url(/images/spriteme1.png);
-  background-position: -10px -305px; }
 
 /****************************
   Post Manager

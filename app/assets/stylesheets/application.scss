@@ -95,7 +95,7 @@ table th{ color: black; padding: 5px;}
  header
 ***********************/
 #header{position:relative; background: url("/images/head_bkg.png") 0 4px repeat-x white;  height: 119px;  }
-#header h1{ height: 55px; margin-left: 100px; padding-left: 150px; padding-top:64px; background: url(/images/spriteme1.png) -10px -166px; width:490px;}
+#header h1{ height: 55px; margin-left: 100px; padding-left: 150px; padding-top:64px; width:490px;}
 #header #description {position:absolute; top:92px;left:730px;}
 #header #rss{position:absolute; top:95px; left:715px; width:38px; height:40px; display:block; background:url("/images/rss.png") no-repeat; text-indent:-9999px;}
 /**********************
@@ -120,7 +120,7 @@ table{margin:0;}
  footer
 **********************/
 #foot_wrapper{ float: left; background: no-repeat url(); height: 137px;}
-#foot_body{margin-left: 95px; padding-right:25px; height: 58px; width: 462px; background: url(/images/spriteme1.png) no-repeat -10px -94px; clear:both;}
+#foot_body{margin-left: 95px; padding-right:25px; height: 58px; width: 462px; clear:both;}
 #foot_body p{ text-align: center;}
  /********************
   nav
@@ -181,7 +181,7 @@ table#contact_info .contacts a{ display:block;line-height:17px;}
 #twitter h2 {text-align:left;border-bottom:2px solid black;}
 
 pre {display: block; margin: 5px 0; white-space: pre; overflow: auto; line-height: 1.4; border: 3px solid #ccc; background: #ece9d8; padding: 5px; -moz-border-radius:10px; -webkit-border-radius: 10px;}
-#foot_wrapper {background-image: url(/images/spriteme1.png); background-position: -10px -305px;}
+#foot_wrapper {}
 
 /****************************
   Post Manager
