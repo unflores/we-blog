@@ -4,10 +4,10 @@ Weblog::Application.routes.draw do
   resources :posts do
     collection do
       get 'display'
-      match "tag/:name", :to => "posts#tag", :as => 'by_tag_name'  
+      match "tag/:name", :to => "posts#tag", :as => 'by_tag_name'
     end
   end
-
+  resources :tags, :only => [:index]
   
   resources :sessions
   match '/rss', :to => "posts#display", :defaults => {:format => 'rss'}, :as => :rss
