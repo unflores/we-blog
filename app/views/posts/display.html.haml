@@ -11,3 +11,4 @@
         != RedCloth.new(post.body).to_html
       -unless post.tag_list.blank?
         =render :partial => "shared/tag_list", :locals => { :tag_list => post.tag_list }
+  = will_paginate @posts, :page_links => false

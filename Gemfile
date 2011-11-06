@@ -7,6 +7,7 @@ gem 'RedCloth','4.2.7'
 gem 'heroku'
 gem 'taps'
 gem 'acts-as-taggable-on'
+gem 'will_paginate', '~> 3.0'
 
 # To use debugger (ruby-debug for Ruby 1.8.7+, ruby-debug19 for Ruby 1.9.2+)
 

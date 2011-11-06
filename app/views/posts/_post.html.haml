@@ -4,7 +4,7 @@
       %th= f.label 'title (h3.)'
       %td= f.text_field :title
     %tr
-      %td{:colspan=>'2'}= f.text_area :body
+      %td{ :colspan=>'2' }= f.text_area :body
     %tr
       %th= f.label 'in blog?'
       %td= f.check_box :published
@@ -23,4 +23,6 @@
       %li
         \#ol
       %li
-        wrap code in pre then code tags
+        code: bc..
+      %li
+        inline code: @codeword@

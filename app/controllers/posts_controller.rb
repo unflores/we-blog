@@ -2,7 +2,8 @@ class PostsController < ApplicationController
   before_filter :admin_required, :only => [ :index, :new, :edit,:create, :destroy, :update ]
   before_filter :get_resource, :only => [:show, :edit, :destroy, :update]
   def display
-    @posts = Post.on_frontpage
+    @posts = Post.live.paginate(:page => params[:page])
+    
     respond_to do |format| 
       format.html
       format.rss{ redirect_if_direct_request }
@@ -25,7 +26,7 @@ class PostsController < ApplicationController
   end
 
   def tag
-    @posts = Post.tagged_with(params[:name])
+    @posts = Post.live.tagged_with(params[:name]).paginate(:page => params[:page])
     render :display
   end
 

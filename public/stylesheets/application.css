@@ -53,6 +53,14 @@ ul {
   list-style: none;
   font-size: 15px; }
 
+form ul {
+  margin: 0;
+  padding: 0; }
+
+form {
+  padding: 0px;
+  margin: 0; }
+
 img {
   border: none; }
 
@@ -101,22 +109,18 @@ a:hover {
   list-style: inside circle;
   margin-left: 30px; }
 
-/********** generic_form *************/
-form {
-  padding: 0px;
-  margin: 0; }
-
+/********** form *************/
 form fieldset {
   border: solid 1px #b7adbd;
   padding: 5px; }
 
 form input {
   margin: 0;
-  border: 1px solid #CCF; }
+  border: 1px solid #ccccff; }
 
 form select {
   margin: 0 5px 0 5px;
-  border: 1px solid #CCF;
+  border: 1px solid #ccccff;
   width: 100px; }
 
 form input:focus, form select:focus, option:focus {
@@ -138,36 +142,30 @@ form label {
 form textarea {
   width: 100%;
   height: 20em;
-  border: 1px solid #CCF;
+  border: 1px solid #ccccff;
   padding: 0;
   margin: 0; }
 
 form textarea:focus {
   border: 1px solid #487305; }
 
-form button {
-  margin: 10px 0 0 0;
-  background-color: #FFF;
-  color: black;
-  border: 3px double #4B5320; }
-
-form ul {
-  padding: 0;
-  margin: 0; }
-
 form ul li {
   list-style-type: none;
   margin: 1em 0 0 0; }
-
-form #subject {
-  width: 250px; }
-
+form #post_title {
+  width: 100%;
+  height: 30px;
+  font-size: 20px;
+  font-weight: bold; }
 form #post_submit {
   margin-top: 10px;
   width: 200px;
   height: 50px;
   font-size: 30px;
-  cursor: pointer; }
+  cursor: pointer;
+  border: #777 solid 2px;
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px; }
 
 .no_send {
   display: none; }
@@ -178,25 +176,20 @@ form #post_submit {
   -webkit-border-radius: 5px;
   padding: 5px;
   margin-top: 5px;
-  border: 1px solid #B5B3BF; }
-
-#textile_defs h4 {
+  border: 1px solid #B5B3BF;
   text-align: center; }
-
-#textile_defs ul {
-  text-align: center; }
-
-#textile_defs ul li {
-  line-height: 10px;
-  font-size: 10px;
-  display: inline;
-  font-style: italic;
-  border-right: solid #4F4F4F 1px;
-  padding: 0 5px;
-  color: #4F4F4F; }
-
-#textile_defs ul li:last-child {
-  border: none; }
+  #textile_defs ul li {
+    display: inline;
+    border-right: solid #4f4f4f 2px;
+    padding: 0 4px 0 8px; }
+  #textile_defs ul li:last-child {
+    border: none; }
+  #textile_defs #textile_defs ul li {
+    line-height: 10px;
+    font-size: 10px;
+    font-style: italic;
+    padding: 0 5px;
+    color: #4F4F4F; }
 
 /*********** generic table ************/
 table {
@@ -382,43 +375,49 @@ table {
   width: 175px;
   margin: 20px 2em 0 2em;
   padding: 25px 0; }
-
-#nav ul {
-  font-size: 15px; }
-
-#nav ul li {
-  padding: 0;
-  margin: 0;
-  width: 100%;
-  line-height: 2em; }
-
-#nav ul li a:link, #nav li a:visited {
-  margin: 0 0;
-  display: block;
-  text-align: center;
-  font-family: Verdana, Arial, Helvetica, sans-serif;
-  width: 100%;
-  min-height: 15px;
-  font-size: 20px;
-  font-weight: bold;
-  text-decoration: none;
-  color: black;
-  outline: none; }
-
-#nav ul li a:hover, a:active {
-  width: 100%;
-  text-decoration: underline; }
-
-#nav h4 {
-  text-align: center;
-  color: #AF6F00;
-  font-size: 18px; }
+  #nav h4 {
+    text-align: center;
+    color: #af6f00;
+    font-size: 18px; }
+  #nav ul li {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    line-height: 2em; }
+    #nav ul li a:link, #nav ul li a:visited {
+      margin: 0 0;
+      display: block;
+      text-align: center;
+      font-family: Verdana, Arial, Helvetica, sans-serif;
+      width: 100%;
+      min-height: 15px;
+      font-size: 20px;
+      font-weight: bold;
+      text-decoration: none;
+      color: black;
+      outline: none; }
+    #nav ul li a:hover, #nav ul li a:active {
+      width: 100%;
+      text-decoration: underline; }
 
 #nav ul li ul li {
   font-size: 11px; }
 
 #active {
   text-decoration: underline; }
+
+.pagination {
+  position: relative;
+  min-height: 30px; }
+  .pagination a {
+    display: block;
+    position: absolute; }
+  .pagination .disabled {
+    display: none; }
+  .pagination .previous_page {
+    left: 0; }
+  .pagination .next_page {
+    right: 0; }
 
 /*************************
  Resume
