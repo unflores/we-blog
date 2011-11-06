@@ -4,7 +4,7 @@
   - @posts.each do |post|
     #article
       %h3
-        = post.title
+        = link_to post.title, post
         %span.created_at
           = post.created_at.strftime("%m-%d-%Y") if post.created_at
       .content

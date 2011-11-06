@@ -54,5 +54,5 @@ class PostsController < ApplicationController
       end 
     end
 
-    def get_resource; @post = Post.find(params[:id]) end
+    def get_resource; @post = Post.where(:slug => params[:id]).first end
 end
