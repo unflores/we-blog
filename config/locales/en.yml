@@ -1,5 +1,12 @@
-# Sample localization file for English. Add more files in this directory for other locales.
-# See http://github.com/svenfuchs/rails-i18n/tree/master/rails%2Flocale for starting points.
-
 en:
-  hello: "Hello world"
+  nav:
+    home: The Blag
+    about: About
+    experience: Experience
+    admin: Admin
+    manage: Manage Posts
+  heading:
+    tag_line: The super badassed blog by
+  credits: "Brought to you with the help of <a href='http://rubyonrails.org/'>Rails</a> and <a href='http://heroku.com'>Heroku</a>, goodness."
+  posts:
+    none: There are no posts at this time.

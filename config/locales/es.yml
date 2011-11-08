@@ -1,0 +1,10 @@
+es:
+  nav:
+    home: El Blog
+    about: Mí
+    experience: Experiencia
+  heading:
+    tag_line: La super chévere blog por
+  credits: "Traído a usted con la ayuda de la gracia de <a href='http://rubyonrails.org/'>Rails</a> and <a href='http://heroku.com'>Heroku</a>."
+  posts:
+    none: No hay un post en este momento.

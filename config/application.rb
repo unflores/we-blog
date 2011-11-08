@@ -19,6 +19,9 @@ module Weblog
     # :all can be used as a placeholder for all plugins not explicitly named.
     # config.plugins = [ :exception_notification, :ssl_requirement, :all ]
 
+    require "#{config.root}/lib/middleware/locale_selector.rb"  # or if you want to require all of the things! Dir.glob("#{config.root}/lib/**/*.rb").each { |file| require file }
+    config.middleware.use Middleware::LocaleSelector
+
     # Activate observers that should always be running.
     # config.active_record.observers = :cacher, :garbage_collector, :forum_observer
 
@@ -28,7 +31,8 @@ module Weblog
 
     # The default locale is :en and all translations from config/locales/*.rb,yml are auto loaded.
     # config.i18n.load_path += Dir[Rails.root.join('my', 'locales', '*.{rb,yml}').to_s]
-    # config.i18n.default_locale = :de
+    config.i18n.default_locale = :en
+    config.i18n.fallbacks = [:en, :es]
 
     # JavaScript files you want as :defaults (application.js is always included).
     # config.action_view.javascript_expansions[:defaults] = %w(jquery rails)

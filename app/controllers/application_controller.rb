@@ -5,10 +5,7 @@ class ApplicationController < ActionController::Base
   rescue_from ActionView::MissingTemplate, :with => :record_not_found
   
   def navigation_items
-    static_views = RAILS_ROOT + '/app/views/static/'
-    @navigation_items ||= Dir.new(static_views).reject{|n| n[/^[\._0-9]/] }.collect do |n| 
-      { :title => n[/[a-z\_]+/].humanize, :path => "/#{n[/[a-z\_]+/]}" } 
-    end
+    Post.where(:published => false, :in_navigation => true)
   end
 
   # def tweets
