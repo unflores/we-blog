@@ -8,6 +8,7 @@ gem 'heroku'
 gem 'taps'
 gem 'acts-as-taggable-on'
 gem 'will_paginate', '~> 3.0'
+gem 'globalize3'                                # Allows globalization w/in the db
 
 # To use debugger (ruby-debug for Ruby 1.8.7+, ruby-debug19 for Ruby 1.9.2+)
 

@@ -35,6 +35,9 @@ GEM
     configuration (1.2.0)
     erubis (2.6.6)
       abstract (>= 1.0.0)
+    globalize3 (0.1.0)
+      activemodel (>= 3.0.0)
+      activerecord (>= 3.0.0)
     haml (3.0.24)
     heroku (1.17.11)
       json (~> 1.4.6)
@@ -98,6 +101,7 @@ PLATFORMS
 DEPENDENCIES
   RedCloth (= 4.2.7)
   acts-as-taggable-on
+  globalize3
   haml (= 3.0.24)
   heroku
   rails (= 3.0.3)

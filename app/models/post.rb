@@ -1,6 +1,9 @@
 class Post < ActiveRecord::Base
   acts_as_taggable
 
+  translates :title, :body
+
+
   validates_presence_of :body, :title
   validates_uniqueness_of :slug
   scope :live, where(:published => true).order('posts.created_at DESC')

@@ -1,5 +1,5 @@
 class PostsController < ApplicationController
-  before_filter :admin_required, :only => [ :index, :new, :edit,:create, :destroy, :update ]
+  before_filter :admin_required, :only => [ :index, :new, :edit, :create, :destroy, :update ]
   before_filter :get_resource, :only => [:show, :edit, :destroy, :update]
   def display
     @posts = Post.live.paginate(:page => params[:page])
@@ -29,15 +29,16 @@ class PostsController < ApplicationController
     @posts = Post.live.tagged_with(params[:name]).paginate(:page => params[:page])
     render :display
   end
+  
+  def edit
+  end
 
   def update
     respond_to do |format|
       if @post.update_attributes(params[:post])
         format.html { redirect_to(@post, :notice => 'Post was successfully updated.') }
-        format.xml  { head :ok }
       else
         format.html { render :action => "edit" }
-        format.xml  { render :xml => @post.errors, :status => :unprocessable_entity }
       end
     end
   end
@@ -54,5 +55,7 @@ class PostsController < ApplicationController
       end 
     end
 
-    def get_resource; @post = Post.where(:slug => params[:id]).first end
+    def get_resource
+      @post = Post.where(:slug => params[:id], :locale => I18n.locale ).first || Post.new( :locale => I18n.locale )
+    end
 end

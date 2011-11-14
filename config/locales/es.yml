@@ -8,3 +8,7 @@ es:
   credits: "Traído a usted con la ayuda de la gracia de <a href='http://rubyonrails.org/'>Rails</a> and <a href='http://heroku.com'>Heroku</a>."
   posts:
     none: No hay un post en este momento.
+  sign_in:
+    password: La contraseña
+    login: Mette
+    logout: disconecta

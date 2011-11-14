@@ -10,3 +10,7 @@ en:
   credits: "Brought to you with the help of <a href='http://rubyonrails.org/'>Rails</a> and <a href='http://heroku.com'>Heroku</a>, goodness."
   posts:
     none: There are no posts at this time.
+  sign_in:
+    password: Password
+    login: login
+    logout: logout

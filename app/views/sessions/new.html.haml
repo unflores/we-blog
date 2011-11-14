@@ -1,7 +1,7 @@
 - form_tag sessions_path do
-	%label
-		Password:
-		= password_field_tag :password
-	= submit_tag "Login"
-	
-= link_to "logout", "/sessions/1", :method=>'delete'
+  %label
+    =t('sign_in.password') + ":"
+    = password_field_tag :password
+  = submit_tag t('sign_in.login')
+  
+= link_to t("sign_in.logout"), "/sessions/1", :method=>'delete'

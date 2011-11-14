@@ -3,8 +3,14 @@ fr:
     home: Le Blog
     about: Moi
     experience: "L'expérience"
+    admin: Admin
+    manage: Gérer les posts
   heading:
     tag_line: La super aussome blog pour
   credits: "Présenté avec l'aide de <a href='http://rubyonrails.org/'>Rails</a> et <a href='http://heroku.com'>Heroku</a>."
   posts:
     none: N'il y a des posts en ce moment
+  sign_in:
+    password: Mot de passe
+    login: Soumettez
+    logout: Déconnectez
