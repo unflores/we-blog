@@ -9,7 +9,7 @@ class Post < ActiveRecord::Base
   scope :live, where(:published => true).order('posts.created_at DESC')
   scope :for_nav, where(:in_navigation => true)
   
-  before_save :create_slug
+  before_create :build_slug
   
   self.per_page = 5
   
@@ -17,7 +17,7 @@ class Post < ActiveRecord::Base
     slug
   end
   
-  def create_slug
+  def build_slug
     self.slug = title.parameterize
   end
 end

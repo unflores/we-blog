@@ -56,6 +56,6 @@ class PostsController < ApplicationController
     end
 
     def get_resource
-      @post = Post.where(:slug => params[:id], :locale => I18n.locale ).first || Post.new( :locale => I18n.locale )
+      @post = Post.where(:slug => params[:id]).first
     end
 end
