@@ -4,7 +4,7 @@
 %div
 	!= RedCloth.new(@post.body).to_html
 
--if admin? session
+-if admin?
 	%div 
 		= link_to 'Edit this post', edit_post_path(@post)
 		|

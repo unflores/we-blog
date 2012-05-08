@@ -11,8 +11,8 @@ Weblog::Application.routes.draw do
   
   resources :sessions
   match '/rss', :to => "posts#display", :defaults => {:format => 'rss'}, :as => :rss
-  match '/login',   :to => "sessions#new"
-  match '/logout',  :to => "sessions#destroy"
+  match '/login',   :to => "sessions#new",      :as => :login
+  match '/logout',  :to => "sessions#destroy",  :as => :logout
   
   match ':page_name', :to => "static#show"
   

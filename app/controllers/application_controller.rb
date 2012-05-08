@@ -13,14 +13,14 @@ class ApplicationController < ActionController::Base
   # end
   
   def admin_required
-    unless admin?(session)
+    unless admin?
       flash[:error] = "You must be logged in to access this page."
       redirect_to new_session_path
     end
   end
 
-  def admin?(session)
-    session[:password] == (ENV['ADMIN_PASS'] or 'password')
+  def admin?
+    session[:password] == Digest::MD5.hexdigest(ENV['ADMIN_PASS'] || 'password')
   end
   
   def record_not_found

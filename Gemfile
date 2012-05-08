@@ -1,14 +1,14 @@
 source 'http://rubygems.org'
 
-gem 'rails', '3.0.3'
+gem 'rails',      '3.0.3'
 gem 'sqlite3-ruby', :require => 'sqlite3'
-gem 'haml', '3.0.24'
-gem 'RedCloth','4.2.7'
+gem 'haml',       '3.0.24'
+gem 'RedCloth',   '4.2.7'                         # used for storing rendering html from textile posts
 gem 'heroku'
 gem 'taps'
 gem 'acts-as-taggable-on'
 gem 'will_paginate', '~> 3.0'
-gem 'globalize3'                                # Allows globalization w/in the db
+gem 'globalize3'                                  # Allows globalization w/in the db
 
 # To use debugger (ruby-debug for Ruby 1.8.7+, ruby-debug19 for Ruby 1.9.2+)
 
@@ -18,4 +18,5 @@ gem 'globalize3'                                # Allows globalization w/in the 
 group :test do
   gem 'rspec-rails'
   gem 'rspec'
+  gem 'ruby-debug19'
 end

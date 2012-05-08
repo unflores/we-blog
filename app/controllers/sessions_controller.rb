@@ -1,13 +1,15 @@
 class SessionsController < ApplicationController  
   def create  
-    session[:password] = params[:password]  
-    flash[:notice] = 'Successfully logged in'  
-    redirect_to posts_path
+    session[:password] = Digest::MD5.hexdigest(params[:password])
+    if admin?
+      redirect_to posts_path, :notice => t('sign_in.success')
+    else
+      redirect_to login_path, :notice => t('sign_in.bad_password')
+    end
   end  
     
   def destroy  
     reset_session
-    flash[:notice] = 'Successfully logged out'  
-    redirect_to root_path
+    redirect_to root_path, :notice => t('sign_in.signed_out')
   end  
 end

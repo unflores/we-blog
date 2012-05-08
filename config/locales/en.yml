@@ -11,6 +11,9 @@ en:
   posts:
     none: There are no posts at this time.
   sign_in:
-    password: Password
+    bad_password: "Come on bro, that's not the secret passcode."
     login: login
     logout: logout
+    password: Password
+    signed_in: Successfully logged in.
+    signed_out: Successfully logged out.
