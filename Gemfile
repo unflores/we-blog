@@ -1,12 +1,10 @@
 source 'http://rubygems.org'
 
 gem 'rails',      '3.0.3'
-gem 'sqlite3-ruby', :require => 'sqlite3'
+gem 'sqlite3'
 gem 'haml',       '3.0.24'
-gem 'RedCloth',   '4.2.7'                         # used for storing rendering html from textile posts
+gem 'RedCloth',   '4.2.3'                         # used for storing rendering html from textile posts
 gem 'unicorn'
-gem 'heroku'
-gem 'taps'
 gem 'acts-as-taggable-on'
 gem 'will_paginate', '~> 3.0'
 gem 'globalize3'                                  # Allows globalization w/in the db
@@ -19,5 +17,4 @@ gem 'globalize3'                                  # Allows globalization w/in th
 group :test do
   gem 'rspec-rails'
   gem 'rspec'
-  gem 'ruby-debug19'
 end
