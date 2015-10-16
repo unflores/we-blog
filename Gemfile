@@ -4,6 +4,7 @@ gem 'rails',      '3.0.3'
 gem 'sqlite3-ruby', :require => 'sqlite3'
 gem 'haml',       '3.0.24'
 gem 'RedCloth',   '4.2.7'                         # used for storing rendering html from textile posts
+gem 'unicorn'
 gem 'heroku'
 gem 'taps'
 gem 'acts-as-taggable-on'
