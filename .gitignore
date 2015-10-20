@@ -4,9 +4,13 @@ tmp/*
 .bundle
 db/*.sqlite3
 log/*.log
-tmp/**/*
 .DS_Store
 */.DS_Store
 db/schema.rb
 .sass-cache
+/log/*
+!/log/.keep
+tmp/**/*
+!/tmp/.keep
+
 .idea
