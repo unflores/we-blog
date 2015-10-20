@@ -1,7 +1,7 @@
 source 'http://rubygems.org'
 
 gem 'rails',      '3.0.3'
-gem 'sqlite3'
+gem 'pg'
 gem 'haml',       '3.0.24'
 gem 'RedCloth',   '4.2.9'                         # used for storing rendering html from textile posts
 gem 'unicorn'
