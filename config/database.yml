@@ -4,8 +4,9 @@
 default: &default
   adapter: postgresql
   encoding: unicode
-  url: <%= "postgresql://postgres@#{ENV['DB_PORT_5432_TCP_ADDR'] }:#{ENV['DB_PORT_5432_TCP_PORT']}/austinflores?pool=5" %>
-
+  user: postgres
+  host: <%= ENV['DB_PORT_5432_TCP_ADDR'] %>
+  port: <%= ENV['DB_PORT_5432_TCP_PORT'] %>
   # For details on connection pooling, see rails configuration guide
   # http://guides.rubyonrails.org/configuring.html#database-pooling
   pool: 5
