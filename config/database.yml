@@ -4,7 +4,7 @@
 default: &default
   adapter: postgresql
   encoding: unicode
-  user: postgres
+  username: postgres
   host: <%= ENV['DB_PORT_5432_TCP_ADDR'] %>
   port: <%= ENV['DB_PORT_5432_TCP_PORT'] %>
   # For details on connection pooling, see rails configuration guide
